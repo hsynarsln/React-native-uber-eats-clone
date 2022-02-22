@@ -2,17 +2,17 @@ import { YELP_API_KEY } from '@env';
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, View } from 'react-native';
 import { Divider } from 'react-native-elements/dist';
-import BottomTabs from '../components/BottomTabs';
-import Categories from '../components/Categories';
-import HeaderTabs from '../components/HeaderTabs';
-import RestaurantItem, { localRestaurants } from '../components/RestaurantItem';
-import SearchBar from '../components/SearchBar';
+import BottomTabs from '../components/home/BottomTabs';
+import Categories from '../components/home/Categories';
+import HeaderTabs from '../components/home/HeaderTabs';
+import RestaurantItem, { localRestaurants } from '../components/home/RestaurantItem';
+import SearchBar from '../components/home/SearchBar';
 
 const API_KEY = YELP_API_KEY;
 
 const Home = () => {
   const [restaurantData, setRestaurantData] = useState(localRestaurants);
-  const [city, setCity] = useState('Ankara');
+  const [city, setCity] = useState('New York');
   const [activeTab, setActiveTab] = useState('Delivery');
 
   const getRestaurantsFromYelp = () => {

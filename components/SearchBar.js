@@ -1,10 +1,11 @@
+import { GOOGLE_MAPS_APIKEY } from '@env';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const SearchBar = () => {
+const SearchBar = ({ setCity }) => {
   return (
     <View style={{ marginTop: 15, flexDirection: 'row' }}>
       <GooglePlacesAutocomplete
@@ -46,10 +47,12 @@ const SearchBar = () => {
         )}
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
-          console.log(data, details);
+          // console.log(data.description);
+          const city = data.description.split(',')[0];
+          setCity(city);
         }}
         query={{
-          key: 'YOUR API KEY',
+          key: GOOGLE_MAPS_APIKEY,
           language: 'en'
         }}
       />

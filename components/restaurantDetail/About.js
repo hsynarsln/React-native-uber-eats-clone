@@ -10,13 +10,13 @@ const yelpRestaurantInfo = {
   categories: [{ title: 'Thai' }, { title: 'Asian' }, { title: 'Vegetarian' }]
 };
 
-const { name, image, price, reviews, rating, categories } = yelpRestaurantInfo;
+const About = ({ route }) => {
+  const { name, image, price, reviews, rating, categories } = route.params;
 
-const formattedCategories = categories.map(category => category.title).join(' · ');
+  const formattedCategories = categories.map(category => category.title).join(' · ');
 
-const description = `${formattedCategories} ${price ? ' · ' + price : ''} · cart · ${rating} star (${reviews}+)`;
+  const description = `${formattedCategories} ${price ? ' · ' + price : ''} · cart · ${rating} star (${reviews}+)`;
 
-const About = () => {
   return (
     <View>
       <RestaurantImage image={image} />

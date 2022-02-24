@@ -1,15 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
-const yelpRestaurantInfo = {
-  name: 'Farmhouse Kitchen Thai Cuisine',
-  image: 'https://www.themarmarahotels.com/Resources/RestaurantImage/ImageFile/bodrumtutigaleri01_l.jpg',
-  price: '$$',
-  reviews: '1500',
-  rating: 4.5,
-  categories: [{ title: 'Thai' }, { title: 'Asian' }, { title: 'Vegetarian' }]
-};
-
 const About = ({ route }) => {
   const { name, image, price, reviews, rating, categories } = route.params;
 

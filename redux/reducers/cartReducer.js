@@ -17,7 +17,7 @@ const cartReducer = (state = defaultState, { type, payload }) => {
           restaurantName: payload.restaurantName
         };
       }
-      console.log(newState);
+      // console.log(newState);
       return newState;
     default:
       return state;

@@ -8,7 +8,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-- [Built With](#built-with)
+  - [Built With](#built-with)
 - [How To Use](#how-to-use)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
@@ -44,7 +44,8 @@ $ cd client/
     > npm install
 
 # Run the app
-$ npm run dev
+$ expo start
+$ expo watch:android
 ```
 
 ## Acknowledgements

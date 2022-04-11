@@ -8,7 +8,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [How To Use](#how-to-use)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
@@ -37,7 +37,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com)
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/hsynarsln/React-native-uber-clone.git
+$ git clone https://github.com/hsynarsln/React-native-uber-eats-clone.git
 $ cd client/
 
 # Install dependencies
